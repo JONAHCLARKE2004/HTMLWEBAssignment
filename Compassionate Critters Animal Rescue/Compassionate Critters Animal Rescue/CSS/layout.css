@@ -1,0 +1,63 @@
+/*
+The first set of rules define the default styling for the website
+*/
+
+body {
+	background-color:#EEE;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+}
+
+
+main {
+	padding: 2em;
+	display: flex;
+	flex-wrap: wrap; /* Allow items to wrap to the next line */
+	justify-content: space-between; /* Space between col1 and col2 */
+}
+
+
+h1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:900;
+}
+
+#wrapper {margin: auto; width: 90%;	}
+
+/* Gets all img elements where the parent is
+an element with id="banner" */
+#banner>img {width:100%;}
+
+#col1 {
+	width:49%;
+	padding-right:1%;
+	float:left;
+}
+
+#col2 {
+	width:49%;
+	padding-left:1%;	
+	float:left;	
+}
+
+#col1>img, #col2>img {
+	width:33%;
+	margin:auto;
+	display:block;	
+}
+
+#footer {clear:both; border-top:1px black solid;}
+
+
+@media (min-width: 768px) {
+	#col1 {
+		width: 48%; /* Adjust width for larger screens */
+		padding-right: 1%;
+	}
+
+	#col2 {
+		width: 48%; /* Adjust width for larger screens */
+		padding-left: 1%;
+	}
+}
